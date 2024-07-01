@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Celestial.mp3-e6b4a747fcbaa1bc9d7edaf2f2a1ecb6.mp3str"
+
+[deps]
+
+source_file="res://Resources/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/soundtrack/Celestial.mp3"
+dest_files=[ "res://.import/Celestial.mp3-e6b4a747fcbaa1bc9d7edaf2f2a1ecb6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

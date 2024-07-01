@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/20100221_Super Monkey Ball Step & Roll World 4 Far East.wav-82d0830e22d271183b8bba15e6b63d2c.sample"
+
+[deps]
+
+source_file="res://Resources/20100221_Super Monkey Ball Step & Roll World 4 Far East.wav"
+dest_files=[ "res://.import/20100221_Super Monkey Ball Step & Roll World 4 Far East.wav-82d0830e22d271183b8bba15e6b63d2c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

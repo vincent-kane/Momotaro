@@ -1,0 +1,155 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Montserrat-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Button.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=5]
+size = 46
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=6]
+default_font = SubResource( 5 )
+
+[sub_resource type="StreamTexture" id=30]
+flags = 13
+load_path = "res://.import/Gemstones_Gemstones, red, sharp, shiny, yellow glow_image-0_1682428368.png-8b89c16ee11fe4bbf9b8fe3489b880d1.stex"
+
+[sub_resource type="StreamTexture" id=31]
+flags = 4
+load_path = "res://.import/DAMAGEUP.png-3617b1fcd062c77a5c0f72af5d21fd45.stex"
+
+[node name="Control" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( -302, -131 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 40.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0, 0, 0, 0.392157 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 403.0
+margin_top = 44.0
+margin_right = -399.0
+margin_bottom = -499.0
+theme = SubResource( 6 )
+text = "Level Up!"
+
+[node name="Label2" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 317.0
+margin_top = 114.0
+margin_right = -152.0
+margin_bottom = -429.0
+rect_scale = Vector2( 0.7, 0.7 )
+theme = SubResource( 6 )
+text = "Select Your Boost!"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_left = 0.3
+anchor_top = 0.33
+anchor_right = 0.7
+anchor_bottom = 0.376
+
+[node name="HFlowContainer" type="HFlowContainer" parent="."]
+margin_left = 307.2
+margin_top = 240.0
+margin_right = 907.2
+margin_bottom = 320.0
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 242.0
+margin_top = 335.0
+margin_right = 780.0
+margin_bottom = 373.0
+custom_constants/hseparation = 20
+columns = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer"]
+margin_right = 108.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 20
+
+[node name="Sprite" type="Sprite" parent="GridContainer/VBoxContainer"]
+visible = false
+position = Vector2( 130, -53 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer"]
+margin_right = 108.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Speed Boost10%"
+align = 1
+
+[node name="Button" type="Button" parent="GridContainer/VBoxContainer"]
+margin_top = 34.0
+margin_right = 108.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+text = "Select"
+script = ExtResource( 3 )
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="GridContainer"]
+margin_left = 128.0
+margin_right = 223.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 20
+
+[node name="Sprite2" type="Sprite" parent="GridContainer/VBoxContainer2"]
+visible = false
+position = Vector2( 130, -53 )
+scale = Vector2( 0.2, 0.2 )
+texture = SubResource( 30 )
+
+[node name="Label2" type="Label" parent="GridContainer/VBoxContainer2"]
+margin_right = 95.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Max Health"
+align = 1
+
+[node name="Button2" type="Button" parent="GridContainer/VBoxContainer2"]
+margin_top = 34.0
+margin_right = 95.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+text = "Select"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="GridContainer"]
+margin_left = 243.0
+margin_right = 348.0
+margin_bottom = 54.0
+
+[node name="Sprite3" type="Sprite" parent="GridContainer/VBoxContainer3"]
+visible = false
+position = Vector2( 52, -49 )
+scale = Vector2( 0.106499, 0.0965 )
+texture = SubResource( 31 )
+offset = Vector2( -0.008, 0 )
+
+[node name="Label3" type="Label" parent="GridContainer/VBoxContainer3"]
+margin_right = 105.0
+margin_bottom = 14.0
+text = "Damage Up Test"
+
+[node name="Button3" type="Button" parent="GridContainer/VBoxContainer3"]
+margin_top = 18.0
+margin_right = 105.0
+margin_bottom = 38.0
+
+[connection signal="pressed" from="GridContainer/VBoxContainer/Button" to="GridContainer/VBoxContainer/Button" method="_on_Button_pressed"]

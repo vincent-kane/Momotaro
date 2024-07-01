@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Red Carpet Wooden Floor.mp3-87312431a30ec66e90ee1e796161bdde.mp3str"
+
+[deps]
+
+source_file="res://Resources/generic-rpg-pack_v0.4_(alpha-release)_vacaroxa/soundtrack/Red Carpet Wooden Floor.mp3"
+dest_files=[ "res://.import/Red Carpet Wooden Floor.mp3-87312431a30ec66e90ee1e796161bdde.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
